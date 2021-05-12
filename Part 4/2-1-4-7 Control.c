@@ -8,118 +8,118 @@
 void main()
 {
 	int grade;
-	printf("¼ºÀû Á¡¼ö¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì„±ì  ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &grade);
 	if (grade > 60)
 	{
-		printf("½ÃÇè ÇÕ°Ý!\n");
+		printf("ì‹œí—˜ í•©ê²©!\n");
 	}
 
 	printf("\n");
 
 	int grade1;
-	printf("¼ºÀû Á¡¼ö¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì„±ì  ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &grade1);
 	if (grade1 > 60)
 	{
-		printf("½ÃÇè ÇÕ°Ý!\n");
+		printf("ì‹œí—˜ í•©ê²©!\n");
 	}
 	else
 	{
-		printf("½ÃÇè ºÒÇÕ°Ý!\n");
+		printf("ì‹œí—˜ ë¶ˆí•©ê²©!\n");
 	}
 
 	printf("\n");
 
 	int grade2;
-	printf("¼ºÀû Á¡¼ö¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì„±ì  ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &grade2);
 	if (grade2 > 60)
 	{
-		printf("Á¡¼ö : %d\n", grade2);
-		printf("ÇÕ°Ý! ÃàÇÏÇÕ´Ï´Ù.\n");
+		printf("ì ìˆ˜ : %d\n", grade2);
+		printf("í•©ê²©! ì¶•í•˜í•©ë‹ˆë‹¤.\n");
 	}
 	else
 	{
-		printf("½ÃÇè ºÒÇÕ°Ý!\n");
-		printf("´Ù½Ã ½ÃµµÇØº¸¼¼¿ä.\n");
+		printf("ì‹œí—˜ ë¶ˆí•©ê²©!\n");
+		printf("ë‹¤ì‹œ ì‹œë„í•´ë³´ì„¸ìš”.\n");
 	}
 
 	printf("\n");
 
 	int value;
-	printf("Á¤¼ö¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &value);
 	if (value > 0)
 	{
-		printf("¾ç¼öÀÔ´Ï´Ù.\n");
+		printf("ì–‘ìˆ˜ìž…ë‹ˆë‹¤.\n");
 	}
 	else if (value < 0)
 	{
-		printf("À½¼öÀÔ´Ï´Ù.\n");
+		printf("ìŒìˆ˜ìž…ë‹ˆë‹¤.\n");
 	}
 	else
 	{
-		printf("0ÀÔ´Ï´Ù.\n");
+		printf("0ìž…ë‹ˆë‹¤.\n");
 	}
 
 	printf("\n");
 
 	int button;
-	printf("¼ýÀÚ(1~3)¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ìˆ«ìž(1~3)ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &button);
 	switch (button)
 	{
 	case 1:
-		printf("¹ÐÅ©Ä¿ÇÇ\n");
+		printf("ë°€í¬ì»¤í”¼\n");
 		break;
 	case 2:
-		printf("ÇÁ¸²Ä¿ÇÇ\n");
+		printf("í”„ë¦¼ì»¤í”¼\n");
 		break;
 	case 3:
-		printf("ºí·¢Ä¿ÇÇ\n");
+		printf("ë¸”ëž™ì»¤í”¼\n");
 		break;
 	}
 
 	printf("\n");
 
 	int button1;
-	printf("¼ýÀÚ(1~5)¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ìˆ«ìž(1~5)ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &button1);
 	switch (button1)
 	{
 	case 1:
-		printf("¹ÐÅ©Ä¿ÇÇ\n");
+		printf("ë°€í¬ì»¤í”¼\n");
 		break;
 	case 2:
-		printf("ÇÁ¸²Ä¿ÇÇ\n");
+		printf("í”„ë¦¼ì»¤í”¼\n");
 		break;
 	case 3:
-		printf("ºí·¢Ä¿ÇÇ\n");
+		printf("ë¸”ëž™ì»¤í”¼\n");
 		break;
 	default:
-		printf("ÄÚÄÚ¾Æ\n");
+		printf("ì½”ì½”ì•„\n");
 	}
 
 	printf("\n");
 
 	int grade3, grade4;
-	printf("µÎ°³ÀÇ ¼ºÀûÁ¡¼ö¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ë‘ê°œì˜ ì„±ì ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%d %d", &grade3, &grade4);
 	if (grade3 >= 60 && grade4 >= 60)
 	{
-		printf("½ÃÇè ÇÕ°Ý!\n");
+		printf("ì‹œí—˜ í•©ê²©!\n");
 	}
 	else
 	{
-		printf("½ÃÇè ºÒÇÕ°Ý!\n");
+		printf("ì‹œí—˜ ë¶ˆí•©ê²©!\n");
 	}
 
 	printf("\n");
 
 	char operand;
 	int a = 3, b = 4;
-	printf("¿¬»êÀÚ(+ - * / %)¸¦ ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì—°ì‚°ìž(+ - * / %)ë¥¼ ìž…ë ¥í•˜ê³  Enter>");
 	scanf("%c", &operand);
 	switch (operand)
 	{
@@ -139,6 +139,6 @@ void main()
 		printf("a % b = %d\n", a % b);
 		break;
 	default:
-		printf("°è»êÇÒ ¼ö ¾ø½À´Ï´Ù.");
+		printf("ê³„ì‚°í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 	}
 }
