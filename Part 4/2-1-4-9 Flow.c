@@ -8,8 +8,8 @@
 void main()
 {
 	int i, n, sum = 0;
-	printf("1╨нем n╠НаЖюг а╓╪Ж гу\n");
-	printf("а╓╪Ж n ют╥б : ");
+	printf("1К╤─М└╟ nЙ╧▄Л╖─Л²≤ Л═∙Л┬≤ М∙╘\n");
+	printf("Л═∙Л┬≤ n Л·┘К═╔ : ");
 	scanf("%d", &n);
 	for (i = 1; i <= n; i += 1)
 	{
@@ -19,7 +19,7 @@ void main()
 			break;
 		}
 	}
-	printf("гу : %d , i = %d\n", sum, i);
+	printf("М∙╘ : %d , i = %d\n", sum, i);
 
 	printf("\n");
 
