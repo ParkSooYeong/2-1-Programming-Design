@@ -5,17 +5,17 @@
 
 void main()
 {
-	printf("%s %d\n", "Åä¼º", 1426980000);
-	printf("%s %d\n", "Ãµ¿Õ¼º", 2870000000);
-	printf("%s %d\n", "ÇØ¿Õ¼º", 4497070000);
-	printf("%s %d\n", "¸í¿Õ¼º", 5913520000);
+	printf("%s %d\n", "í† ì„±", 1426980000);
+	printf("%s %d\n", "ì²œì™•ì„±", 2870000000);
+	printf("%s %d\n", "í•´ì™•ì„±", 4497070000);
+	printf("%s %d\n", "ëª…ì™•ì„±", 5913520000);
 
 	printf("\n");
 
-	printf("%s %d\n", "Åä¼º", 1426980000);
-	printf("%s %f\n", "Ãµ¿Õ¼º", 2870000000.);
-	printf("%s %f\n", "ÇØ¿Õ¼º", 4497070000.);
-	printf("%s %f\n", "¸í¿Õ¼º", 5913520000.);
+	printf("%s %d\n", "í† ì„±", 1426980000);
+	printf("%s %f\n", "ì²œì™•ì„±", 2870000000.);
+	printf("%s %f\n", "í•´ì™•ì„±", 4497070000.);
+	printf("%s %f\n", "ëª…ì™•ì„±", 5913520000.);
 
 	printf("\n");
 
@@ -56,15 +56,15 @@ void main()
 	printf("\n");
 
 	char ch1 = 'A';
-	printf("ch1ÀÇ ¹®ÀÚ°ª %c\n", ch1);
+	printf("ch1ì˜ ë¬¸ìê°’ %c\n", ch1);
 
 	printf("\n");
 
 	char ch2 = 'A', ch3 = 66;
-	printf("ch2ÀÇ °ª %c\n", ch2);
-	printf("ch2ÀÇ Á¤¼ö°ª %d\n", ch2);
-	printf("ch3ÀÇ °ª %c\n", ch3);
-	printf("ch3ÀÇ Á¤¼ö°ª %d\n", ch3);
+	printf("ch2ì˜ ê°’ %c\n", ch2);
+	printf("ch2ì˜ ì •ìˆ˜ê°’ %d\n", ch2);
+	printf("ch3ì˜ ê°’ %c\n", ch3);
+	printf("ch3ì˜ ì •ìˆ˜ê°’ %d\n", ch3);
 
 	printf("\n");
 }
