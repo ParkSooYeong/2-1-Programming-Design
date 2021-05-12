@@ -24,13 +24,13 @@ void main()
 	printf("\n");
 
 	int k;
-	printf("¼¼ ÀÚ¸® 10Áø Á¤¼ö ÀÔ·Â ÈÄ Enter>");
+	printf("ì„¸ ìë¦¬ 10ì§„ ì •ìˆ˜ ì…ë ¥ í›„ Enter>");
 	scanf("%d", &k);
-	printf("  1ÀÇ ÀÚ¸®¼ö %d\n", k % 10);
+	printf("  1ì˜ ìë¦¬ìˆ˜ %d\n", k % 10);
 	k = k / 10;
-	printf(" 10ÀÇ ÀÚ¸®¼ö %d\n", k % 10);
+	printf(" 10ì˜ ìë¦¬ìˆ˜ %d\n", k % 10);
 	k = k / 10;
-	printf("100ÀÇ ÀÚ¸®¼ö %d\n", k % 10);
+	printf("100ì˜ ìë¦¬ìˆ˜ %d\n", k % 10);
 
 	printf("\n");
 
@@ -61,8 +61,8 @@ void main()
 	int l;
 	l = j;
 	j = j - l;
-	printf("Á¤¼öºÎºĞÀº %d\n", l);
-	printf("¼Ò¼öºÎºĞÀº %f\n", j);
+	printf("ì •ìˆ˜ë¶€ë¶„ì€ %d\n", l);
+	printf("ì†Œìˆ˜ë¶€ë¶„ì€ %f\n", j);
 
 	printf("\n");
 
