@@ -16,103 +16,103 @@ int main(void)
 {
 	char i = 3;
 	int k = 8;
-	printf("º¯¼ö iÀÇ ÁÖ¼Ò(10Áø¼ö)>%u\n", &i);
-	printf("º¯¼ö kÀÇ ÁÖ¼Ò(10Áø¼ö)>%u\n", &k);
-	printf("º¯¼ö iÀÇ ÁÖ¼Ò(16Áø¼ö)>%p\n", &i);
-	printf("º¯¼ö kÀÇ ÁÖ¼Ò(16Áø¼ö)>%p\n", &k);
+	printf("ë³€ìˆ˜ iì˜ ì£¼ì†Œ(10ì§„ìˆ˜)>%u\n", &i);
+	printf("ë³€ìˆ˜ kì˜ ì£¼ì†Œ(10ì§„ìˆ˜)>%u\n", &k);
+	printf("ë³€ìˆ˜ iì˜ ì£¼ì†Œ(16ì§„ìˆ˜)>%p\n", &i);
+	printf("ë³€ìˆ˜ kì˜ ì£¼ì†Œ(16ì§„ìˆ˜)>%p\n", &k);
 
 	printf("\n");
 
 	int k1 = 8;
 	int *p;
 	p = &k1;
-	printf("kÀÇ ÁÖ¼Ò : %u\n", &k1);
-	printf("pÀÇ ÁÖ¼Ò : %u\n", &p);
-	printf("pÀÇ °ª : %u\n", p);
-	printf("p°¡ °¡¸®Å°´Â °÷ÀÇ °ª : %d\n", *p);
+	printf("kì˜ ì£¼ì†Œ : %u\n", &k1);
+	printf("pì˜ ì£¼ì†Œ : %u\n", &p);
+	printf("pì˜ ê°’ : %u\n", p);
+	printf("pê°€ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %d\n", *p);
 
 	printf("\n");
 
 	int k2 = 8, i1 = 3;
 	int *p1;
 	p1 = &k2;
-	printf("k2ÀÇ ÁÖ¼Ò : %u\n", &k2);
-	printf("p1ÀÇ ÁÖ¼Ò : %u\n", &p1);
-	printf("p1ÀÇ °ª : %u\n", p1);
-	printf("p1ÀÌ °¡¸®Å°´Â °÷ÀÇ °ª : %d\n", *p1);
+	printf("k2ì˜ ì£¼ì†Œ : %u\n", &k2);
+	printf("p1ì˜ ì£¼ì†Œ : %u\n", &p1);
+	printf("p1ì˜ ê°’ : %u\n", p1);
+	printf("p1ì´ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %d\n", *p1);
 	p1 = &i1;
-	printf("i1ÀÇ ÁÖ¼Ò : %u\n", &i1);
-	printf("p1ÀÇ °ª : %u\n", p1);
-	printf("p1ÀÌ °¡¸®Å°´Â °÷ÀÇ °ª : %d\n", *p1);
+	printf("i1ì˜ ì£¼ì†Œ : %u\n", &i1);
+	printf("p1ì˜ ê°’ : %u\n", p1);
+	printf("p1ì´ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %d\n", *p1);
 
 	printf("\n");
 
 	int k3 = 8, i2 = 3;
 	int *p2;
 	p2 = &k3;
-	printf("k3ÀÇ °ª : %u\n", k3);
-	printf("p2°¡ °¡¸®Å°´Â °÷ÀÇ °ª : %u\n", *p2);
+	printf("k3ì˜ ê°’ : %u\n", k3);
+	printf("p2ê°€ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %u\n", *p2);
 	*p2 = i2;
-	printf("k3ÀÇ °ª : %u\n", k3);
-	printf("p2°¡ °¡¸®Å°´Â °÷ÀÇ °ª : %u\n", *p2);
+	printf("k3ì˜ ê°’ : %u\n", k3);
+	printf("p2ê°€ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %u\n", *p2);
 
 	printf("\n");
 
 	int a[3] = { 10,20,30 };
 	int *pt;
 	pt = a;
-	printf("¹è¿­ ÀÌ¸§ : %u\n", a);
-	printf("a[0]ÀÇ ÁÖ¼Ò : %u\n", &a[0]);
-	printf("a[1]ÀÇ ÁÖ¼Ò : %u\n", &a[1]);
-	printf("a[2]ÀÇ ÁÖ¼Ò : %u\n", &a[2]);
-	printf("a[0]ÀÇ °ª : %d\n", a[0]);
-	printf("pt°¡ °¡¸®Å°´Â °÷ÀÇ °ª : %d\n", *pt);
+	printf("ë°°ì—´ ì´ë¦„ : %u\n", a);
+	printf("a[0]ì˜ ì£¼ì†Œ : %u\n", &a[0]);
+	printf("a[1]ì˜ ì£¼ì†Œ : %u\n", &a[1]);
+	printf("a[2]ì˜ ì£¼ì†Œ : %u\n", &a[2]);
+	printf("a[0]ì˜ ê°’ : %d\n", a[0]);
+	printf("ptê°€ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %d\n", *pt);
 
 	printf("\n");
 
 	int a1[3] = { 10,20,30 };
 	int *pt1;
 	pt1 = a1;
-	printf("¹è¿­ ÀÌ¸§ : %u\n", a1);
-	printf("a1[1]ÀÇ ÁÖ¼Ò : %u\n", &a[1]);
-	printf("a1+1ÀÇ °ª : %u\n", a1 + 1);
-	printf("pt1+1ÀÇ °ª : %u\n", pt1 + 1);
-	printf("a1[2]ÀÇ °ª : %d\n", a1[2]);
-	printf("*(pt1+2)ÀÇ °ª : %d\n", *(pt1 + 2));
-	printf("*pt1+2ÀÇ °ª : %d\n", *pt1 + 2);
+	printf("ë°°ì—´ ì´ë¦„ : %u\n", a1);
+	printf("a1[1]ì˜ ì£¼ì†Œ : %u\n", &a[1]);
+	printf("a1+1ì˜ ê°’ : %u\n", a1 + 1);
+	printf("pt1+1ì˜ ê°’ : %u\n", pt1 + 1);
+	printf("a1[2]ì˜ ê°’ : %d\n", a1[2]);
+	printf("*(pt1+2)ì˜ ê°’ : %d\n", *(pt1 + 2));
+	printf("*pt1+2ì˜ ê°’ : %d\n", *pt1 + 2);
 
 	printf("\n");
 
 	int a2[3] = { 10,20,30 };
 	int *pt2;
 	pt2 = a2;
-	printf("¹è¿­ ÀÌ¸§ : %u\n", a2);
-	printf("Æ÷ÀÎÅÍ ÁÖ¼Ò : %u\n", &pt2);
-	printf("Æ÷ÀÎÅÍÀÇ °ª : %u\n", pt2);
-	printf("*pt2ÀÇ °ª : %d\n", *pt2);
+	printf("ë°°ì—´ ì´ë¦„ : %u\n", a2);
+	printf("í¬ì¸í„° ì£¼ì†Œ : %u\n", &pt2);
+	printf("í¬ì¸í„°ì˜ ê°’ : %u\n", pt2);
+	printf("*pt2ì˜ ê°’ : %d\n", *pt2);
 	pt2++;
-	printf("Æ÷ÀÎÅÍÀÇ °ª : %u\n", pt2);
-	printf("*pt2ÀÇ °ª : %d\n", *pt2);
+	printf("í¬ì¸í„°ì˜ ê°’ : %u\n", pt2);
+	printf("*pt2ì˜ ê°’ : %d\n", *pt2);
 
 	printf("\n");
 
 	char i3 = 8;
 	int *p3;
 	p3 = &i3;
-	printf("i3ÀÇ ÁÖ¼Ò : %u\n", &i3);
-	printf("p3ÀÇ ÁÖ¼Ò : %u\n", &p3);
-	printf("p3°¡ °¡¸®Å°´Â °÷ÀÇ °ª : %d\n", *p3);
+	printf("i3ì˜ ì£¼ì†Œ : %u\n", &i3);
+	printf("p3ì˜ ì£¼ì†Œ : %u\n", &p3);
+	printf("p3ê°€ ê°€ë¦¬í‚¤ëŠ” ê³³ì˜ ê°’ : %d\n", *p3);
 
 	printf("\n");
 
 	char str1[] = "copy";
 	char *str2 = "next";
-	printf("str1ÀÇ ÁÖ¼Ò : %u\n", str1);
-	printf("str2¿¡ ÀúÀåµÈ ÁÖ¼Ò : %u\n", str2);
-	printf("str1[2]¿¡ ÀúÀåµÈ °ª : %c\n", str1[2]);
-	printf("str2+2ÀÇ °ª : %c\n", *(str2 + 2));
-	printf("¹®ÀÚ¿­ str1 : %s\n", str1);
-	printf("¹®ÀÚ¿­ str2 : %s\n", str2);
+	printf("str1ì˜ ì£¼ì†Œ : %u\n", str1);
+	printf("str2ì— ì €ì¥ëœ ì£¼ì†Œ : %u\n", str2);
+	printf("str1[2]ì— ì €ì¥ëœ ê°’ : %c\n", str1[2]);
+	printf("str2+2ì˜ ê°’ : %c\n", *(str2 + 2));
+	printf("ë¬¸ìì—´ str1 : %s\n", str1);
+	printf("ë¬¸ìì—´ str2 : %s\n", str2);
 
 	printf("\n");
 
@@ -170,9 +170,9 @@ int main(void)
 
 	char *str4;
 	str4 = (char*)malloc(20);
-	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ°í Enter>");
+	printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%s", str4);
-	printf("ÀÔ·ÂµÈ ¹®ÀÚ¿­ : %s\n", str4);
+	printf("ì…ë ¥ëœ ë¬¸ìì—´ : %s\n", str4);
 	free(str4);
 
 	printf("\n");
@@ -181,9 +181,9 @@ int main(void)
 	long num2 = 9876543;
 	char s[25];
 	_itoa(num1, s, 10);
-	printf("Á¤¼ö : %d , ¹®ÀÚ¿­ : %s\n", num1, s);
+	printf("ì •ìˆ˜ : %d , ë¬¸ìì—´ : %s\n", num1, s);
 	_itoa(num2, s, 10);
-	printf("Á¤¼ö : %ld , ¹®ÀÚ¿­ : %s\n", num2, s);
+	printf("ì •ìˆ˜ : %ld , ë¬¸ìì—´ : %s\n", num2, s);
 
 	printf("\n");
 
@@ -191,9 +191,9 @@ int main(void)
 	long num4 = 512;
 	char s1[25];
 	_itoa(num3, s1, 2);
-	printf("Á¤¼ö : %d , 2Áø¼ö ¹®ÀÚ¿­ : %s\n", num3, s1);
+	printf("ì •ìˆ˜ : %d , 2ì§„ìˆ˜ ë¬¸ìì—´ : %s\n", num3, s1);
 	_itoa(num4, s1, 16);
-	printf("Á¤¼ö : %ld , 16Áø¼ö ¹®ÀÚ¿­ : %s\n", num4, s1);
+	printf("ì •ìˆ˜ : %ld , 16ì§„ìˆ˜ ë¬¸ìì—´ : %s\n", num4, s1);
 
 	printf("\n");
 
@@ -204,8 +204,8 @@ int main(void)
 	long num6;
 	num5 = strtod(s2, &endptr);
 	num6 = strtol(s3, &endptr, 2);
-	printf("¹®ÀÚ¿­ : %s , doubleÇü ¼ıÀÚ : %lf\n", s2, num5);
-	printf("¹®ÀÚ¿­ : %s , longÇü 10Áø¼ö : %ld\n", s3, num6);
+	printf("ë¬¸ìì—´ : %s , doubleí˜• ìˆ«ì : %lf\n", s2, num5);
+	printf("ë¬¸ìì—´ : %s , longí˜• 10ì§„ìˆ˜ : %ld\n", s3, num6);
 
 	printf("\n");
 
@@ -224,12 +224,12 @@ int main(void)
 	ptr = strcmp(s5, s6);
 	if (ptr < 0 || ptr > 0)
 	{
-		printf("¹®ÀÚ¿­ s5¿Í s6°¡ ´Ù¸£´Ù.\n");
+		printf("ë¬¸ìì—´ s5ì™€ s6ê°€ ë‹¤ë¥´ë‹¤.\n");
 	}
 	ptr = strncmp(s5, s6, 12);
 	if (ptr == 0)
 	{
-		printf("¹®ÀÚ¿­ s5¿Í s6°¡ °°´Ù.\n");
+		printf("ë¬¸ìì—´ s5ì™€ s6ê°€ ê°™ë‹¤.\n");
 	}
 
 	printf("\n");
