@@ -18,9 +18,9 @@ int call_3(int n);
 void main()
 {
 	int i;
-	printf("¼ıÀÚ ÀÔ·Â ÈÄ Enter>");
+	printf("ìˆ«ì ì…ë ¥ í›„ Enter>");
 	scanf("%d", &i);
-	printf("%dÀÇ Àı´ñ°ª = %d\n", i, abs(i));
+	printf("%dì˜ ì ˆëŒ“ê°’ = %d\n", i, abs(i));
 
 	printf("\n");
 
@@ -63,15 +63,15 @@ void main()
 	printf("\n");
 
 	int n;
-	printf("Á¤¼ö ÀÔ·Â ÈÄ Enter>");
+	printf("ì •ìˆ˜ ì…ë ¥ í›„ Enter>");
 	scanf("%d", &n);
-	printf("1ºÎÅÍ %d±îÁöÀÇ ÇÕ : %d\n", n, add(n));
+	printf("1ë¶€í„° %dê¹Œì§€ì˜ í•© : %d\n", n, add(n));
 
 	printf("\n");
 
-	printf("Á¤¼ö ÀÔ·Â ÈÄ Enter>");
+	printf("ì •ìˆ˜ ì…ë ¥ í›„ Enter>");
 	scanf("%d", &n);
-	printf("1ºÎÅÍ %d±îÁöÀÇ °ö : %d\n", n, fact(n));
+	printf("1ë¶€í„° %dê¹Œì§€ì˜ ê³± : %d\n", n, fact(n));
 
 	printf("\n");
 
