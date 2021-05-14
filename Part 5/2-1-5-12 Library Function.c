@@ -22,19 +22,19 @@ int main(void)
 	char ch1 = '1', ch2 = 'A';
 	if (isalpha(ch2))
 	{
-		printf("%c´Â ¹®ÀÚÀÔ´Ï´Ù.\n", ch2);
+		printf("%cëŠ” ë¬¸ìì…ë‹ˆë‹¤.\n", ch2);
 	}
 	if (isdigit(ch1))
 	{
-		printf("%c´Â ¼ıÀÚÀÔ´Ï´Ù.\n", ch1);
+		printf("%cëŠ” ìˆ«ìì…ë‹ˆë‹¤.\n", ch1);
 	}
-	printf("¼Ò¹®ÀÚ %c\n", tolower(ch2));
+	printf("ì†Œë¬¸ì %c\n", tolower(ch2));
 
 	printf("\n");
 
-	printf("intÇü ¼ıÀÚ : %d\n", atoi("47476"));
-	printf("longÇü ¼ıÀÚ : %ld\n", atol("98765432"));
-	printf("doubleÇü ¼ıÀÚ : %lf\n", atof("3456.7634"));
+	printf("intí˜• ìˆ«ì : %d\n", atoi("47476"));
+	printf("longí˜• ìˆ«ì : %ld\n", atol("98765432"));
+	printf("doubleí˜• ìˆ«ì : %lf\n", atof("3456.7634"));
 
 	printf("\n");
 
@@ -53,7 +53,7 @@ int main(void)
 	double num5 = 16.0;
 	double mantissa;
 	int expt;
-	printf("Áö¼öÇÔ¼ö e^%.1f = %f\n", num1, exp(num1));
+	printf("ì§€ìˆ˜í•¨ìˆ˜ e^%.1f = %f\n", num1, exp(num1));
 	printf("%.1f * 2^%.1f = %f\n", num2, num1, ldexp(num2, 2));
 	mantissa = frexp(num3, &expt);
 	printf("%.1f = %.1f * 2^%d\n", num3, mantissa, expt);
@@ -69,19 +69,19 @@ int main(void)
 	double num = 367.568, frct, intg;
 	double x1 = 7.0, y1 = 2.0;
 	ix = div(10, 4);
-	printf("10/4ÀÇ °á°ú ¸ò : %d , ³ª¸ÓÁö : %d\n", ix.quot, ix.rem);
+	printf("10/4ì˜ ê²°ê³¼ ëª« : %d , ë‚˜ë¨¸ì§€ : %d\n", ix.quot, ix.rem);
 	lx = ldiv(100L, 30L);
-	printf("100/30ÀÇ °á°ú ¸ò : %ld , ³ª¸ÓÁö : %ld\n", lx.quot, lx.rem);
+	printf("100/30ì˜ ê²°ê³¼ ëª« : %ld , ë‚˜ë¨¸ì§€ : %ld\n", lx.quot, lx.rem);
 	frct = modf(num, &intg);
-	printf("%lfÀÇ Á¤¼ö : %lf , ½Ç¼ö : %lf\n", num, intg, frct);
-	printf("%lf / %lfÀÇ ³ª¸ÓÁö : %lf\n", x1, y1, fmod(x1, y1));
+	printf("%lfì˜ ì •ìˆ˜ : %lf , ì‹¤ìˆ˜ : %lf\n", num, intg, frct);
+	printf("%lf / %lfì˜ ë‚˜ë¨¸ì§€ : %lf\n", x1, y1, fmod(x1, y1));
 
 	printf("\n");
 
 	double degree = 90;
 	double radian = PI / 2;
-	printf("°¢µµ %fÀÇ ¶óµğ¾È = %f\n", degree, deg2rad(degree));
-	printf("¶óµğ¾È %fÀÇ °¢µµ = %f\n", radian, rad2deg(radian));
+	printf("ê°ë„ %fì˜ ë¼ë””ì•ˆ = %f\n", degree, deg2rad(degree));
+	printf("ë¼ë””ì•ˆ %fì˜ ê°ë„ = %f\n", radian, rad2deg(radian));
 
 	printf("\n");
 
@@ -102,7 +102,7 @@ int main(void)
 	{
 		system("cls");
 		printf("%d * %d = %d\n", 1, i, 1 * i);
-		printf("¾Æ¹«Å°³ª ´©¸£½Ã¿À.\n");
+		printf("ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ì‹œì˜¤.\n");
 		_getch();
 	}
 
@@ -116,7 +116,7 @@ int main(void)
 		{
 			printf("%d * %d = %d\n", j, i, j * i);
 		}
-		printf("¾Æ¹«Å°³ª ´©¸£½Ã¿À.\n");
+		printf("ì•„ë¬´í‚¤ë‚˜ ëˆ„ë¥´ì‹œì˜¤.\n");
 		_getch();
 	}
 
