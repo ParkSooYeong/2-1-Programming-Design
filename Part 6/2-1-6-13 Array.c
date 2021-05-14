@@ -30,19 +30,19 @@ int main(void)
 	int korea[4], i2, sum = 0;
 	for (i2 = 0; i2 < 4; i2 += 1)
 	{
-		printf("%d¹øÂ° µæÁ¡¼ö ÀÔ·Â : ", i2);
+		printf("%dë²ˆì§¸ ë“ì ìˆ˜ ì…ë ¥ : ", i2);
 		scanf("%d", &korea[i2]);
 		sum += korea[i2];
-		printf("ÀÔ·ÂµÈ µ¥ÀÌÅÍ : %d\n", korea[i2]);
+		printf("ì…ë ¥ëœ ë°ì´í„° : %d\n", korea[i2]);
 	}
-	printf("ÇÕ°è : %d\n", sum);
+	printf("í•©ê³„ : %d\n", sum);
 
 	printf("\n");
 
 	char str[10];
-	printf("¹®ÀÚ¿­ ÀÔ·Â ÈÄ Enter>");
+	printf("ë¬¸ìì—´ ì…ë ¥ í›„ Enter>");
 	scanf("%s", str);
-	printf("ÀÔ·ÂµÈ ¹®ÀÚ¿­ : %s\n", str);
+	printf("ì…ë ¥ëœ ë¬¸ìì—´ : %s\n", str);
 	printf("str[3] = %c\n", str[3]);
 
 	printf("\n");
@@ -60,12 +60,12 @@ int main(void)
 	printf("\n");
 
 	char str1[20];
-	printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ°í Enter>");
+	printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ê³  Enter>");
 	gets(str1);
-	printf("ÀÔ·ÂµÈ ¹®ÀÚ¿­ : %s\n", str1);
+	printf("ì…ë ¥ëœ ë¬¸ìì—´ : %s\n", str1);
 
 	char str2[20] = "program";
-	puts("C ¾ğ¾î");
+	puts("C ì–¸ì–´");
 	puts(str2);
 
 	printf("\n");
@@ -109,7 +109,7 @@ int main(void)
 	printf("\n");
 
 	char str3[10];
-	printf("¹®ÀÚ¿­À» ÀÔ·Â : ");
+	printf("ë¬¸ìì—´ì„ ì…ë ¥ : ");
 	scanf("%s", str3);
 	print_array(str3);
 
@@ -120,12 +120,12 @@ int main(void)
 					  {5,2,9} };
 	int sum2;
 	sum2 = sum_mat(ma1, 3);
-	printf("Çà·Ä¿ä¼ÒÀÇ ÇÕ : %d\n", sum2);
+	printf("í–‰ë ¬ìš”ì†Œì˜ í•© : %d\n", sum2);
 }
 
 void print_array(char a[])
 {
-	printf("ÀÔ·ÂµÈ ¹®ÀÚ¿­ : ");
+	printf("ì…ë ¥ëœ ë¬¸ìì—´ : ");
 	printf("%s\n", a);
 }
 
