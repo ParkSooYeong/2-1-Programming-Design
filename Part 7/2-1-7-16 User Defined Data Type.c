@@ -48,10 +48,10 @@ int main(void)
 
 	enum prod v;
 	v = battery;
-	printf("��ġ��ȣ : %d\n", v);
-	printf("engine ��ȣ : %d\n", engine);
+	printf("ÀåÄ¡¹øÈ£ : %d\n", v);
+	printf("engine ¹øÈ£ : %d\n", engine);
 	v = fuse;
-	printf("��ġ��ȣ : %d\n", v);
+	printf("ÀåÄ¡¹øÈ£ : %d\n", v);
 
 	printf("\n");
 
