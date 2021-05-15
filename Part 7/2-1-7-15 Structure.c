@@ -92,7 +92,7 @@ void input_name(struct node1 *ptr);
 
 int main(void)
 {
-	struct user d = { "¹Ú¼ö¿µ",
+	struct user d = { "ë°•ìˆ˜ì˜",
 					  "012-345-6789",
 					  1 };
 	printf("name : %s\n", d.name);
@@ -102,7 +102,7 @@ int main(void)
 	printf("\n");
 
 	struct user d1;
-	strcpy(d1.name, "¹Ú¼ö¿µ");
+	strcpy(d1.name, "ë°•ìˆ˜ì˜");
 	strcpy(d1.phone, "012-345-6789");
 	d1.quick = 1;
 	printf("name : %s\n", d1.name);
@@ -112,11 +112,11 @@ int main(void)
 	printf("\n");
 
 	struct user d2;
-	printf("name ÀÔ·Â : ");
+	printf("name ì…ë ¥ : ");
 	scanf("%s", d2.name);
-	printf("phone ÀÔ·Â : ");
+	printf("phone ì…ë ¥ : ");
 	scanf("%s", d2.phone);
-	printf("quick ÀÔ·Â : ");
+	printf("quick ì…ë ¥ : ");
 	scanf("%d", &d2.quick);
 	printf("name : %s\n", d2.name);
 	printf("phone : %s\n", d2.phone);
@@ -124,7 +124,7 @@ int main(void)
 
 	printf("\n");
 
-	struct user d3, d4 = { "¹Ú¼ö¿µ",
+	struct user d3, d4 = { "ë°•ìˆ˜ì˜",
 						   "012-345-6789",
 						   1 };
 	d3 = d4;
@@ -147,8 +147,8 @@ int main(void)
 
 	printf("\n");
 
-	struct user d5[2] = { {"¹Ú¼ö¿µ","012-345-6789",0},
-						  {"¹Ú¼ö¿µ2","987-654-3210",1} };
+	struct user d5[2] = { {"ë°•ìˆ˜ì˜","012-345-6789",0},
+						  {"ë°•ìˆ˜ì˜2","987-654-3210",1} };
 	int i;
 	for (i = 0; i < 2; i++)
 	{
@@ -160,8 +160,8 @@ int main(void)
 
 	printf("\n");
 
-	struct user d6[2] = { {"¹Ú¼ö¿µ","012-345-6789",0},
-						  {"¹Ú¼ö¿µ2","987-654-3210",1} };
+	struct user d6[2] = { {"ë°•ìˆ˜ì˜","012-345-6789",0},
+						  {"ë°•ìˆ˜ì˜2","987-654-3210",1} };
 	struct user *pt;
 	int i1;
 	pt = d6;
@@ -179,30 +179,30 @@ int main(void)
 
 	printf("\n");
 
-	struct user d7[2] = { {"¹Ú¼ö¿µ","012-345-6789",0},
-						  {"¹Ú¼ö¿µ2","987-654-3210",1} };
+	struct user d7[2] = { {"ë°•ìˆ˜ì˜","012-345-6789",0},
+						  {"ë°•ìˆ˜ì˜2","987-654-3210",1} };
 	struct user *pt1;
 	pt1 = d7;
-	printf("pt1ÀÇ ÁÖ¼Ò : %u\n", &pt1);
-	printf("pt1ÀÇ °ª : %u\n", pt1);
-	printf("d7[1]ÀÇ ÁÖ¼Ò : %u\n", &d7[1]);
+	printf("pt1ì˜ ì£¼ì†Œ : %u\n", &pt1);
+	printf("pt1ì˜ ê°’ : %u\n", pt1);
+	printf("d7[1]ì˜ ì£¼ì†Œ : %u\n", &d7[1]);
 
 	printf("\n");
 
-	struct user d8 = { "¹Ú¼ö¿µ", "012-345-6789", 1 };
+	struct user d8 = { "ë°•ìˆ˜ì˜", "012-345-6789", 1 };
 	display_st(d8);
 
 	printf("\n");
 
-	struct user d9 = { "¹Ú¼ö¿µ", "012-345-6789", 1 };
+	struct user d9 = { "ë°•ìˆ˜ì˜", "012-345-6789", 1 };
 	display_st1(&d9);
 	change_st(&d9);
 	display_st1(&d9);
 
 	printf("\n");
 
-	struct user d10[2] = { {"¹Ú¼ö¿µ","012-345-6789",0},
-						   {"¹Ú¼ö¿µ2","987-654-3210",1} };
+	struct user d10[2] = { {"ë°•ìˆ˜ì˜","012-345-6789",0},
+						   {"ë°•ìˆ˜ì˜2","987-654-3210",1} };
 	display_st2(d10, 2);
 
 	printf("\n");
@@ -213,8 +213,8 @@ int main(void)
 
 	printf("\n");
 
-	struct user d12[2] = { {"¹Ú¼ö¿µ","012-345-6789",0},
-						   {"¹Ú¼ö¿µ2","987-654-3210",1} };
+	struct user d12[2] = { {"ë°•ìˆ˜ì˜","012-345-6789",0},
+						   {"ë°•ìˆ˜ì˜2","987-654-3210",1} };
 	struct user *pt2;
 	int i3;
 	pt2 = d12;
@@ -245,13 +245,13 @@ int main(void)
 	printf("\n");
 
 	struct person3 man2[3];
-	printf("ÀÌ¸§À» ÀÔ·ÂÇÏ°í Enter : ");
+	printf("ì´ë¦„ì„ ì…ë ¥í•˜ê³  Enter : ");
 	scanf("%s", man2[0].name);
-	printf("³ªÀÌ¸¦ ÀÔ·ÂÇÏ°í Enter : ");
+	printf("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ê³  Enter : ");
 	scanf("%d", man2[0].age);
-	printf("ÁıÀüÈ­¸¦ ÀÔ·ÂÇÏ°í Enter : ");
+	printf("ì§‘ì „í™”ë¥¼ ì…ë ¥í•˜ê³  Enter : ");
 	scanf("%s", man2[0].number.home_num);
-	printf("ÈŞ´ëÆù¹øÈ£¸¦ ÀÔ·ÂÇÏ°í Enter : ");
+	printf("íœ´ëŒ€í°ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ê³  Enter : ");
 	scanf("%s", man2[0].number.mobile_num);
 	printf("\n");
 	printf("name : %s\n", man2[0].name);
@@ -283,11 +283,11 @@ int main(void)
 	a2.link = &a3;
 	a3.link = NULL;
 	printf("Linked List\n\n");
-	printf("headÀÇ ÁÖ¼Ò : %u\n", &head);
-	printf("headÀÇ Æ÷ÀÎÅÍ : %u\n", head);
+	printf("headì˜ ì£¼ì†Œ : %u\n", &head);
+	printf("headì˜ í¬ì¸í„° : %u\n", head);
 	while (head != NULL)
 	{
-		printf("µ¥ÀÌÅÍ : %c , ÁÖ¼Ò : %u\n", head->data, head->link);
+		printf("ë°ì´í„° : %c , ì£¼ì†Œ : %u\n", head->data, head->link);
 		head = head->link;
 	}
 
@@ -307,7 +307,7 @@ int main(void)
 	printf("Linked List\n\n");
 	while (head1 != NULL)
 	{
-		printf("µ¥ÀÌÅÍ : %s , ÁÖ¼Ò : %u\n", head1->data, head1->link);
+		printf("ë°ì´í„° : %s , ì£¼ì†Œ : %u\n", head1->data, head1->link);
 		head1 = head1->link;
 	}
 }
@@ -326,7 +326,7 @@ void display_st1(struct user *data)
 
 void change_st(struct user *data)
 {
-	strcpy(data->name, "¹Ú¼ö¿µ1");
+	strcpy(data->name, "ë°•ìˆ˜ì˜1");
 }
 
 void display_st2(struct user *s, int n)
@@ -350,9 +350,9 @@ void display_st3(struct person s)
 struct person input_st(void)
 {
 	struct person s;
-	printf("ÀÌ¸§ ÀÔ·Â ÈÄ Enter>");
+	printf("ì´ë¦„ ì…ë ¥ í›„ Enter>");
 	gets(s.name);
-	printf("ÇĞ¹ø 8ÀÚ¸® ÀÔ·Â ÈÄ Enter>");
+	printf("í•™ë²ˆ 8ìë¦¬ ì…ë ¥ í›„ Enter>");
 	scanf("%d", &s.id);
 	return s;
 }
@@ -364,6 +364,6 @@ struct node1 *creat(void)
 
 void input_name(struct node1 *ptr)
 {
-	printf("ÀÌ¸§À» ÀÔ·ÂÇÏ°í Enter : ");
+	printf("ì´ë¦„ì„ ì…ë ¥í•˜ê³  Enter : ");
 	scanf("%s", ptr->data);
 }
