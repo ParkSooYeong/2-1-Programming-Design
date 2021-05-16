@@ -37,11 +37,11 @@ int main(void)
 	fp = fopen("chr.txt", "w");
 	if (fp == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
-	printf("Enter°¡ »ç¿ëµÉ ¶§±îÁö ¹®ÀÚÃâ·Â\n");
-	printf("¹®ÀÚÀÔ·Â : ");
+	printf("Enterê°€ ì‚¬ìš©ë  ë•Œê¹Œì§€ ë¬¸ìì¶œë ¥\n");
+	printf("ë¬¸ìì…ë ¥ : ");
 	while ((c = getchar()) != '\n')
 	{
 		printf("%c", c);
@@ -57,7 +57,7 @@ int main(void)
 	fp1 = fopen("chr.txt", "r");
 	if (fp1 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	while ((c1 = fgetc(fp1)) != EOF)
@@ -74,7 +74,7 @@ int main(void)
 	fp2 = fopen("chr.txt", "r");
 	if (fp2 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	while (!feof(fp2))
@@ -91,7 +91,7 @@ int main(void)
 	fp3 = fopen("worldcup.txt", "w");
 	if (fp3 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	fputs("Korea\n", fp3);
@@ -108,7 +108,7 @@ int main(void)
 	fp4 = fopen("worldcup.txt", "r");
 	if (fp4 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	while (!feof(fp4))
@@ -121,14 +121,14 @@ int main(void)
 
 	printf("\n");
 
-	char *team[4] = { "´ëÇÑ¹Î±¹","ÀÏº»","Áß±¹","¹Ì±¹" };
+	char *team[4] = { "ëŒ€í•œë¯¼êµ­","ì¼ë³¸","ì¤‘êµ­","ë¯¸êµ­" };
 	int marks[4] = { 1,2,3,4 };
 	int i;
 	FILE *fp5;
 	fp5 = fopen("20xxcup.txt", "w");
 	if (fp5 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	for (i = 0; i <= 3; i++)
@@ -146,7 +146,7 @@ int main(void)
 	fp6 = fopen("20xxcup.txt", "r");
 	if (fp6 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	while (!feof(fp6))
@@ -155,7 +155,7 @@ int main(void)
 		sum += marks1;
 		printf("%-8s %2d\n", chr1, marks1);
 	}
-	printf("µæÁ¡ ÇÕ : %d\n", sum);
+	printf("ë“ì  í•© : %d\n", sum);
 	fclose(fp6);
 
 	printf("\n");
@@ -166,10 +166,10 @@ int main(void)
 	FILE *fp7;
 	if ((fp7 = fopen(filename,"w")) == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
-	printf("ÀÌ¸§°ú Á¡¼ö¸¦ ÀÔ·ÂÇÏ°í Enter\n");
+	printf("ì´ë¦„ê³¼ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ê³  Enter\n");
 	for (i1 = 0; i1 <= 2; i1++)
 	{
 		scanf("%s %d\n", names, &score);
@@ -182,22 +182,22 @@ int main(void)
 
 	FILE *fp8;
 	int i2;
-	worldcup d[4] = { {"´ëÇÑ¹Î±¹",1,2,3},
-					  {"ÀÏº»",4,5,6},
-					  {"Áß±¹",7,8,9},
-					  {"¹Ì±¹",10,11,12} };
+	worldcup d[4] = { {"ëŒ€í•œë¯¼êµ­",1,2,3},
+					  {"ì¼ë³¸",4,5,6},
+					  {"ì¤‘êµ­",7,8,9},
+					  {"ë¯¸êµ­",10,11,12} };
 	fp8 = fopen("group.bin", "wb");
 	if (fp8 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	if (fwrite(d, sizeof(worldcup), 4, fp8) != 4)
 	{
-		printf("File Write Error ¹ß»ı!");
+		printf("File Write Error ë°œìƒ!");
 		exit(1);
 	}
-	printf("±¹°¡ÀÌ¸§ ½Â ¹« ÆĞ\n");
+	printf("êµ­ê°€ì´ë¦„ ìŠ¹ ë¬´ íŒ¨\n");
 	for (i2 = 0; i2 < 4; i2++)
 	{
 		printf("%-8s %2d %2d %2d\n", d[i2].na, d[i2].vic, d[i2].tie, d[i2].def);
@@ -212,15 +212,15 @@ int main(void)
 	fp9 = fopen("group.bin", "rb");
 	if (fp9 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	if (fread(d1, sizeof(worldcup), 4, fp9) != 4)
 	{
-		printf("File Write Error ¹ß»ı!");
+		printf("File Write Error ë°œìƒ!");
 		exit(1);
 	}
-	printf("±¹°¡ÀÌ¸§ ½Â ¹« ÆĞ\n");
+	printf("êµ­ê°€ì´ë¦„ ìŠ¹ ë¬´ íŒ¨\n");
 	for (i3 = 0; i3 < 4; i3++)
 	{
 		printf("%-8s %2d %2d %2d\n", d1[i3].na, d1[i3].vic, d1[i3].tie, d1[i3].def);
@@ -235,14 +235,14 @@ int main(void)
 	fp10 = fopen("group.bin", "rb");
 	if (fp10 == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	fseek(fp10, 0L, SEEK_END);
 	total_block = ftell(fp10) / sizeof(worldcup);
 	while (1)
 	{
-		printf("¿øÇÏ´Â blockÀÇ ¼ıÀÚ(1-%d)¸¦ ÀÔ·ÂÇÏ°í Enter >", total_block);
+		printf("ì›í•˜ëŠ” blockì˜ ìˆ«ì(1-%d)ë¥¼ ì…ë ¥í•˜ê³  Enter >", total_block);
 		scanf("%ld", &block_number);
 		fflush(stdin);
 		if (block_number > total_block)
@@ -252,11 +252,11 @@ int main(void)
 		fseek(fp10, sizeof(worldcup) * (block_number - 1), SEEK_SET);
 		if (fread(&d2, sizeof(worldcup), 1, fp10) != 1)
 		{
-			printf("File Write Error ¹ß»ı!");
+			printf("File Write Error ë°œìƒ!");
 			exit(1);
 		}
-		printf("\nÇöÀç block À§Ä¡ : %d\n", block_number);
-		printf("±¹°¡ÀÌ¸§ ½Â ¹« ÆĞ\n");
+		printf("\ní˜„ì¬ block ìœ„ì¹˜ : %d\n", block_number);
+		printf("êµ­ê°€ì´ë¦„ ìŠ¹ ë¬´ íŒ¨\n");
 		printf("%-8s %2d %2d %2d\n\n", d2.na, d2.vic, d2.tie, d2.def);
 	}
 	fclose(fp10);
@@ -283,7 +283,7 @@ void search_data(void)
 	fpr = fopen(file, "rb");
 	if (fpr == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	fseek(fpr, 0L, SEEK_END);
@@ -291,7 +291,7 @@ void search_data(void)
 	fseek(fpr, 0L, SEEK_SET);
 	fread(d3, sizeof(struct worldcup1), total_block, fpr);
 	fclose(fpr);
-	printf("ÆÄÀÏ¿¡¼­ °Ë»öÇÒ ±¹°¡¸íÀ» ÀÔ·ÂÇÏ°í Enter>");
+	printf("íŒŒì¼ì—ì„œ ê²€ìƒ‰í•  êµ­ê°€ëª…ì„ ì…ë ¥í•˜ê³  Enter>");
 	gets(name1);
 	for (i4 = 0; i4 < total_block; i4++)
 	{
@@ -302,7 +302,7 @@ void search_data(void)
 		}
 		if (check == 0)
 		{
-			printf("ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ ¾øÀ½\n");
+			printf("ì¼ì¹˜í•˜ëŠ” ë°ì´í„° ì—†ìŒ\n");
 		}
 	}
 }
@@ -315,24 +315,24 @@ void change_data(void)
 	fpr = fopen(file, "rb+");
 	if (fpr == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	fseek(fpr, 0L, SEEK_END);
 	total_block = ftell(fpr) / sizeof(worldcup);
 	rewind(fpr);
 	fread(d4, sizeof(worldcup), total_block, fpr);
-	printf("\nÀüÃ¼ data\n");
-	printf("block ±¹°¡ÀÌ¸§ ½Â ¹« ÆĞ\n");
+	printf("\nì „ì²´ data\n");
+	printf("block êµ­ê°€ì´ë¦„ ìŠ¹ ë¬´ íŒ¨\n");
 	for (i5 = 0; i5 < total_block; i5++)
 	{
 		printf("%d %-8s %3d %3d %3d\n", i5, d4[i5].na, d4[i5].vic, d4[i5].tie, d4[i5].def);
 	}
-	printf("½ÂÁ¡À» ¼öÁ¤ÇÏ·Á´Â blockÀÇ ¹øÈ£¸¦ ÀÔ·Â>");
+	printf("ìŠ¹ì ì„ ìˆ˜ì •í•˜ë ¤ëŠ” blockì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥>");
 	scanf("%d", &block_number);
 	fflush(stdin);
-	printf("±¹°¡¸í : %s\n", d4[block_number].na);
-	printf("¼öÁ¤ÇÒ ½ÂÁ¡ ÀÔ·Â ÈÄ Enter>");
+	printf("êµ­ê°€ëª… : %s\n", d4[block_number].na);
+	printf("ìˆ˜ì •í•  ìŠ¹ì  ì…ë ¥ í›„ Enter>");
 	scanf("%d", &d4[block_number].vic);
 	rewind(fpr);
 	fseek(fpr, sizeof(worldcup) * block_number, SEEK_SET);
@@ -349,7 +349,7 @@ void delete_data(void)
 	fpr = fopen(file, "rb");
 	if (fpr == NULL)
 	{
-		printf("File open¿¡ ¿À·ù ¹ß»ı");
+		printf("File openì— ì˜¤ë¥˜ ë°œìƒ");
 		exit(1);
 	}
 	fseek(fpr, 0L, SEEK_END);
@@ -357,7 +357,7 @@ void delete_data(void)
 	fseek(fpr, 0L, SEEK_SET);
 	fread(d5, sizeof(worldcup), total_block, fpr);
 	fclose(fpr);
-	printf("ÆÄÀÏ¿¡¼­ »èÁ¦ÇÒ ±¹°¡¸íÀ» ÀÔ·ÂÇÏ°í Enter>");
+	printf("íŒŒì¼ì—ì„œ ì‚­ì œí•  êµ­ê°€ëª…ì„ ì…ë ¥í•˜ê³  Enter>");
 	gets(name2);
 	for (i6 = 0; i6 < total_block; i6++)
 	{
@@ -369,11 +369,11 @@ void delete_data(void)
 		}
 		if (check == 0)
 		{
-			printf("ÀÏÄ¡ÇÏ´Â µ¥ÀÌÅÍ ¾øÀ½\n");
+			printf("ì¼ì¹˜í•˜ëŠ” ë°ì´í„° ì—†ìŒ\n");
 		}
 	}
-	printf("\n»èÁ¦ Ã³¸® ÈÄ ÀüÃ¼ data\n\n");
-	printf("±¹°¡ÀÌ¸§ ½Â ¹« ÆĞ\n");
+	printf("\nì‚­ì œ ì²˜ë¦¬ í›„ ì „ì²´ data\n\n");
+	printf("êµ­ê°€ì´ë¦„ ìŠ¹ ë¬´ íŒ¨\n");
 	for (i6 = 0; i6 < total_block; i6++)
 	{
 		printf("%-8s %3d %3d %3d\n", d5[i6].na, d5[i6].vic, d5[i6].tie, d5[i6].def);
