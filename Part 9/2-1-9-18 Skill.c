@@ -4,8 +4,8 @@
 #define _CRT_SECURE_NO_WARNINGS // Warning C4996 Error
 #define EQ ==
 #define PI 3.141592
-#define START "ÇÁ·Î±×·¥À» ½ÃÀÛÇÕ´Ï´Ù."
-#define END "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù."
+#define START "í”„ë¡œê·¸ë¨ì„ ì‹œì‘í•©ë‹ˆë‹¤."
+#define END "í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤."
 #define SQUARE(x) x*x
 #define SQUARE1(x) ((x)*(x))
 #define LEVEL 1
@@ -32,14 +32,14 @@ int main(void)
 {
 	char *ptr;
 	int size;
-	printf("ÀÔ·ÂÇÒ ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦\n");
-	printf("byte¼ö·Î ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì…ë ¥í•  ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼\n");
+	printf("byteìˆ˜ë¡œ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &size);
 	ptr = (char*)malloc(size + 1);
-	printf("%d°³ÀÇ ¹®ÀÚ¿­À»\n", size);
-	printf("°ø¹é¾øÀÌ ÀÔ·ÂÇÏ°í Enter>");
+	printf("%dê°œì˜ ë¬¸ìì—´ì„\n", size);
+	printf("ê³µë°±ì—†ì´ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%s", ptr);
-	printf("ÀÔ·ÂµÈ ¹®ÀÚ¿­ : %s\n", ptr);
+	printf("ì…ë ¥ëœ ë¬¸ìì—´ : %s\n", ptr);
 	free(ptr);
 
 	printf("\n");
@@ -47,15 +47,15 @@ int main(void)
 	struct person p;
 	p.name = (char*)malloc(sizeof(char) * 20);
 	p.phone_num = (char*)malloc(sizeof(char) * 14);
-	printf("ÀÌ¸§ ÀÔ·Â >");
+	printf("ì´ë¦„ ì…ë ¥ >");
 	scanf("%s", p.name);
-	printf("ÈŞ´ëÆù ÀÔ·Â >");
+	printf("íœ´ëŒ€í° ì…ë ¥ >");
 	scanf("%s", p.phone_num);
-	printf("º§¼Ò¸® ÀÔ·Â >");
+	printf("ë²¨ì†Œë¦¬ ì…ë ¥ >");
 	scanf("%d", &p.bell_num);
-	printf("ÀÌ¸§ : %s\n", p.name);
-	printf("ÈŞ´ëÆù : %s\n", p.phone_num);
-	printf("º§¼Ò¸® : %d\n", p.bell_num);
+	printf("ì´ë¦„ : %s\n", p.name);
+	printf("íœ´ëŒ€í° : %s\n", p.phone_num);
+	printf("ë²¨ì†Œë¦¬ : %d\n", p.bell_num);
 
 	printf("\n");
 
@@ -73,14 +73,14 @@ int main(void)
 
 	double radius;
 	printf("%s\n", START);
-	printf("0ÀÌ ¾Æ´Ñ ¹İÁö¸§ÀÇ ±æÀÌ¸¦ ÀÔ·ÂÇÏ°í Enter : ");
+	printf("0ì´ ì•„ë‹Œ ë°˜ì§€ë¦„ì˜ ê¸¸ì´ë¥¼ ì…ë ¥í•˜ê³  Enter : ");
 	scanf("%lf", &radius);
 	if (radius EQ 0)
 	{
 		printf("%s\n", END);
 		exit(0);
 	}
-	printf("¿øÀÇ µÑ·¹´Â %lf ÀÔ´Ï´Ù.\n", 2 * PI * radius);
+	printf("ì›ì˜ ë‘˜ë ˆëŠ” %lf ì…ë‹ˆë‹¤.\n", 2 * PI * radius);
 	printf("%s\n", END);
 
 	printf("\n");
@@ -101,17 +101,17 @@ int main(void)
 
 	printf("\n");
 
-	printf("ÄÄÆÄÀÏµÈ ÆÄÀÏ : %s\n", __FILE__);
-	printf("ÄÄÆÄÀÏµÈ ³¯Â¥ : %s\n", __DATE__);
-	printf("ÄÄÆÄÀÏµÈ ÆÄÀÏ : %s\n", __TIME__);
-	printf("ÇöÀçÀÇ line : %d\n", __LINE__);
+	printf("ì»´íŒŒì¼ëœ íŒŒì¼ : %s\n", __FILE__);
+	printf("ì»´íŒŒì¼ëœ ë‚ ì§œ : %s\n", __DATE__);
+	printf("ì»´íŒŒì¼ëœ íŒŒì¼ : %s\n", __TIME__);
+	printf("í˜„ì¬ì˜ line : %d\n", __LINE__);
 
 	printf("\n");
 
 #if (LEVEL>1)
-	printf("Àü¹®°¡¿ë ÇÁ·Î±×·¥\n");
+	printf("ì „ë¬¸ê°€ìš© í”„ë¡œê·¸ë¨\n");
 #else
-	printf("ÃÊº¸ÀÚ¿ë ÇÁ·Î±×·¥\n");
+	printf("ì´ˆë³´ììš© í”„ë¡œê·¸ë¨\n");
 #endif
 
 	printf("\n");
@@ -129,23 +129,23 @@ int main(void)
 	printf("\n"); */
 
 #ifdef LEVEL
-	printf("Àü¹®°¡¿ë ÇÁ·Î±×·¥\n");
+	printf("ì „ë¬¸ê°€ìš© í”„ë¡œê·¸ë¨\n");
 #else
-	printf("ÃÊº¸ÀÚ¿ë ÇÁ·Î±×·¥\n");
+	printf("ì´ˆë³´ììš© í”„ë¡œê·¸ë¨\n");
 #endif
 
 	printf("\n");
 
 	char *ptr1;
 	int size1;
-	printf("ÀÔ·ÂÇÒ ¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦\n");
-	printf("byte¼ö·Î ÀÔ·ÂÇÏ°í Enter>");
+	printf("ì…ë ¥í•  ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼\n");
+	printf("byteìˆ˜ë¡œ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%d", &size1);
 	ptr1 = (char*)malloc(size1 + 1);
-	printf("%d°³ÀÇ ¹®ÀÚ¿­À»\n", size1);
-	printf("°ø¹é¾øÀÌ ÀÔ·ÂÇÏ°í Enter>");
+	printf("%dê°œì˜ ë¬¸ìì—´ì„\n", size1);
+	printf("ê³µë°±ì—†ì´ ì…ë ¥í•˜ê³  Enter>");
 	scanf("%d", ptr1);
-	printf("ÀÔ·ÂµÈ ¹®ÀÚ¿­ : %s\n", ptr1);
+	printf("ì…ë ¥ëœ ë¬¸ìì—´ : %s\n", ptr1);
 	free(ptr1);
 	system("pause");
 	return 0;
